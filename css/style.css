@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  margin-bottom: 100px;
+  margin-top: 30px;
+}
+
+#logo {
+  display:flex;
+  justify-content: flex-start;
+  margin-left: 260px;
+}
+
+span { 
+  flex-direction: column;
+}
+
+nav {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: 320px;
+  width: 56.5%;
+}
+
+h3 {
+  font-weight: 1000px;
+  font-size: 24px;
+}
+
+#slogan {
+  font-size: 10px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2px;
+}
+
+li {
+  float: right;
+}
+
+li img {
+  display: block;
+  color: white;
+  float:right;
+  text-align: center;
+  text-decoration: none; 
+  height: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#headBorder {
+  background-image: url("img/hr-img.png");
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  border-image-repeat: repeat;
+}
+
+main {
+  width: 960px;
+  margin: 30px auto 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+#mainTop {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+h1 {
+  display: block;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+#print {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-right: 60px;
+}
+
+p {
+  color: gray;
+  opacity: 80%;
+}
+
+#paragraph p {
+  text-indent: 3%;
+  line-height: 2;
+  margin-right: 50px;
+  
+}
+
+.checkbox {
+  position:relative;
+  text-align: center;
+  color:rgb(98, 97, 97);
+}
+
+.checkboxLeft {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-30%, -20%);
+}
+
+.checkboxRight {
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  transform: translate(-30%, -20%);
+}
+
+.container{
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  text-decoration:line-through;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  text-decoration:line-through;
+}
+
+.container input:checked~.checkmark {
+  text-decoration:line-through;
+}
+
+.checkmark:after {
+  text-decoration:line-through;
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  text-decoration:line-through;
+}
+
+.foot {
+  display: flex;
+  width: 960px;
+  margin: 30px auto 0;
+}
+
+#nameBio {
+  margin-left: 20px;
+}
+
+#nameBio h2 {
+  font-weight: 300px;
+  font-size: 20px;
+}
+
+#nameBio p {
+
+}
+
+a {
+  display: flex;
+  margin-left: 35px;
+  background-color: rgb(118, 62, 27);
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 160px;
+  height: 60px; 
+  font: 16px;
+  text-decoration: unset;
+}
+
